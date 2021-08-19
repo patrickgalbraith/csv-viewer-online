@@ -26,5 +26,5 @@ input.onchange = function () {
     })
   }
 
-  reader.readAsText(file)
+  file && reader.readAsText(file)
 }
