@@ -11,7 +11,10 @@ input.onchange = function () {
     var csv = e.target.result
     var data = Papa.parse(csv, {
       header: true,
-      skipEmptyLines: true
+      skipEmptyLines: true,
+      error: function(err, file) {
+        console.error("CSV parsing error", err);
+      }
     })
 
     // reset container
