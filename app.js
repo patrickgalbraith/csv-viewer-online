@@ -22,6 +22,7 @@ input.onchange = function () {
     handsontableContainer.className = ''
 
     Handsontable(handsontableContainer, {
+      width: "90%",
       data: data.data,
       rowHeaders: true,
       colHeaders: data.meta.fields,
