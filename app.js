@@ -22,7 +22,8 @@ input.onchange = function () {
       data: data.data,
       rowHeaders: true,
       colHeaders: data.meta.fields,
-      columnSorting: true
+      columnSorting: true,
+      licenseKey: 'non-commercial-and-evaluation'
     })
   }
 
